@@ -10,7 +10,188 @@
     <meta name="keywords" content="incendie, terrain, nuisible, debrousaillage">
     <meta name="author" content="Débrousaillage">
  <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
-   
+  <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",  // Définit le vocabulaire utilisé, ici Schema.org
+   "@type": "Service",  // Indique qu'il s'agit d'un service proposé
+   "name": "Elagage",  // Nom du service proposé
+   "description": "Service professionnel d'intervention pour assurer la santé de des arbres et la sécurité de l'environnement",
+   // Description détaillée et optimisée pour le SEO
+   "provider": {  // Informations sur l'entreprise qui fournit ce service
+     "@type": "Gardener, landscaper",
+     "name": "Lucas jardins",  // Nom de l'entreprise
+     "url": "https://justinebrnb.github.io",  // URL officielle du site de l'entreprise
+     "logo": {  // Informations sur le logo de l'entreprise
+       "@type": "ImageObject",
+       "url": "https://justinebrnb.github.io/images/logo/Logo.webp",  // URL du logo
+       "width": 150,  // Largeur du logo en pixels
+       "height": 150  // Hauteur du logo en pixels
+     },
+     "address": {  // Adresse postale de l'entreprise
+       "@type": "PostalAddress",
+       "streetAddress": "102 Chemin du Génie",  // Rue et numéro
+       "addressLocality": "Nice",  // Ville
+       "postalCode": "06000",  // Code postal
+       "addressRegion": "Provence-Alpes-Côte d'Azur",  // Région administrative
+       "addressCountry": "FR"  // Pays
+     },
+     "telephone": "+33-7-88-76-05-71",  // Numéro de téléphone de l'entreprise
+     "email": "contact@lucasjardins.fr"  // Adresse e-mail de contact
+   },
+   "areaServed": {  // Zone desservie par le service
+     "@type": "Place",
+     "name": "Nice et ses environs (rayon de 30 km)"  // Zone d'intervention précisée
+   },
+   "serviceType": ["Débrousaillage", "Herbes hautes", "Végétation dense", "Nettoyage jardin"],
+   // Liste des différentes prestations incluses dans le service de débrousaillage
+   "hasOfferCatalog": {  // Catalogue des offres liées à ce service
+     "@type": "OfferCatalog",
+     "name": "Débrousaillage",
+     "itemListElement": [  // Liste des offres spécifiques liées au service
+       {
+         "@type": "Offer",
+         "itemOffered": {
+           "@type": "Service",
+           "name": "Débroussaillage manuel",  // Type de service
+           "description": "Idéal pour les petits terrains."
+         },
+         "priceSpecification": {
+           "@type": "PriceSpecification",
+           "price": "150",  // Prix en euros
+           "priceCurrency": "EUR"  // Devise utilisée
+         }
+       },
+       {
+         "@type": "Offer",
+         "itemOffered": {
+           "@type": "Service",
+           "name": "Débroussaillage mécanique",
+           "description": "Recommandé pour les grandes surfaces, ce service permet un travail rapide et efficace grâce à l’utilisation de machines performantes."
+         },
+         "priceSpecification": {
+           "@type": "PriceSpecification",
+           "price": "230",
+           "priceCurrency": "EUR"
+         }
+       },
+       {
+         "@type": "Offer",
+         "itemOffered": {
+           "@type": "Service",
+           "name": "Entretien des espaces verts",
+           "description": "Tonte de pelouse et taille des haies."
+         },
+         "priceSpecification": {
+           "@type": "PriceSpecification",
+           "price": "70",
+           "priceCurrency": "EUR"
+         }
+       }
+     ]
+   },
+   "url": "https://justinebrnb.github.io/debroussaillage.html",  // URL de la page du service
+   "image": "https://justinebrnb.github.io/debrou0.webp",  // Image illustrant le service
+   "offers": {  // Offre globale pour ce service
+     "@type": "Offer",
+     "priceCurrency": "EUR",  // Devise utilisée
+     "price": "À partir de 70",  // Prix de départ pour ce service
+     "availability": "https://schema.org/InStock",  // Indique que le service est disponible
+     "validFrom": "2025-03-01"  // Date à partir de laquelle l'offre est valide
+   },
+   "review": [  // Liste des avis clients sur ce service
+     {
+       "@type": "Review",
+       "author": {  // Auteur de l'avis
+         "@type": "Person",
+         "name": "Gisèle Garcia"
+       },
+       "reviewRating": {  // Note donnée par l'auteur
+         "@type": "Rating",
+         "ratingValue": "5",  // Note sur 5
+         "bestRating": "5"
+       },
+       "reviewBody": "Excellent, l’équipe est à l’écoute et très profesionnelle"  // Commentaire du client
+     },
+     {
+       "@type": "Review",
+       "author": {
+         "@type": "Person",
+         "name": "Patrice Raffard"
+       },
+       "reviewRating": {
+         "@type": "Rating",
+         "ratingValue": "4.5",
+         "bestRating": "5"
+       },
+       "reviewBody": "Très bons professionnels, matériel moderne et service rapide."
+     }
+   ],
+   "aggregateRating": {  // Note globale du service
+     "@type": "AggregateRating",
+     "ratingValue": "4.8",  // Moyenne des notes
+     "reviewCount": "30"  // Nombre total d'avis
+   },
+   "sameAs": [  // Liens vers les profils sociaux et plateformes d'avis
+    "https://www.facebook.com/profile.php?id=100089258752223",
+     "https://www.instagram.com/lucasjardins06/"
+   ]
+  }
+  </script>
+
+
+ <script type="application/ld+json">
+{
+   "@context": "https:/schema.org",
+   "type": "BreadcrumbList",
+   "itemListElement": [
+       {
+        "@type": "ListItem",
+               "position": 1,
+               "name": "Index",
+               "item": "https://justinebrnb.github.io"
+       },
+       {
+       "@type": "ListItem",
+               "position": 2,
+               "name": "FAQ",
+               "item": "https://justinebrnb.github.io/faq.html"
+ 
+        },
+                             
+        {
+        "@type": "ListItem",
+                "position": 3,
+                "name": "Débroussaillage",
+                "item": "https://justinebrnb.github.io/debroussaillage.html"
+                                                         
+        },
+ {
+       "@type": "ListItem",
+               "position": 4,
+               "name": "À propos",
+               "item": "https://justinebrnb.github.io/propos.html"
+ 
+        },
+
+
+
+
+        {
+        "@type": "ListItem",
+                "position": 5,
+                "name": "Contact",
+                "item": "https://justinebrnb.github.io/contact.html"
+         
+        }
+
+
+
+
+        ],
+}
+</script>
+
+
   
  </head>
  <body>
@@ -95,6 +276,7 @@
     <h4 class = "footer2"> Pour ne jamais rien manquer</h4>
     <p><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img  src="images/RS/logo1.png" alt="Facebook" width="70" height="70"></a>
 
+
     <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img  src="images/RS/logo3.png" alt="Instagram" width="70" height="70"></a></p>
     </div>
     <div class="contact">
@@ -125,3 +307,7 @@
  </footer>
   </body>
   </html>
+
+
+
+
