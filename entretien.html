@@ -11,7 +11,228 @@
    <meta name="author" content="Entretien d'espaces verts">
  <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
    
+ <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",  // Définit le vocabulaire utilisé, ici Schema.org
+    "@type": "Service",  // Indique qu'il s'agit d'un service proposé
+    "name": "Entretien",  // Nom du service proposé
+    "description": "Prestations d’entretien personnalisées, que ce soit pour un espace privé, une résidence, une entreprise ou une collectivité.",
+    // Description détaillée et optimisée pour le SEO
+    "provider": {  // Informations sur l'entreprise qui fournit ce service
+      "@type": "Gardener, landscaper",
+      "name": "Lucas jardins",  // Nom de l'entreprise
+      "url": "https://justinebrnb.github.io",  // URL officielle du site de l'entreprise
+      "logo": {  // Informations sur le logo de l'entreprise
+        "@type": "ImageObject",
+        "url": "https://justinebrnb.github.io/images/logo/Logo.webp",  // URL du logo
+        "width": 150,  // Largeur du logo en pixels
+        "height": 150  // Hauteur du logo en pixels
+      },
+      "address": {  // Adresse postale de l'entreprise
+        "@type": "PostalAddress",
+        "streetAddress": "102 Chemin du Génie",  // Rue et numéro
+        "addressLocality": "Nice",  // Ville
+        "postalCode": "06000",  // Code postal
+        "addressRegion": "Provence-Alpes-Côte d'Azur",  // Région administrative
+        "addressCountry": "FR"  // Pays
+      },
+      "telephone": "+33-7-88-76-05-71",  // Numéro de téléphone de l'entreprise
+      "email": "contact@lucasjardins.fr"  // Adresse e-mail de contact
+    },
+    "areaServed": {  // Zone desservie par le service
+      "@type": "Place",
+      "name": "Nice et ses environs (rayon de 30 km)"  // Zone d'intervention précisée
+    },
+    "serviceType": ["Création", "Espaces verts", "Extérieur", "Jardin"],
+    // Liste des différentes prestations incluses dans le service de débrousaillage
+    "hasOfferCatalog": {  // Catalogue des offres liées à ce service
+      "@type": "OfferCatalog",
+      "name": "Entretien",
+      "itemListElement": [  // Liste des offres spécifiques liées au service
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tonte de pelouses",  // Type de service
+            "description": "Tonte régulière, avec réglage personnalisé de la hauteur de coupe."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "100",  // Prix en euros
+            "priceCurrency": "EUR"  // Devise utilisée
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Taille des haies et arbustes",
+            "description": "Taille de haies défensives, décoratives ou fruitières"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "400",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+         "@type": "Offer",
+         "itemOffered": {
+           "@type": "Service",
+           "name": "Ramassage de feuilles et nettoyage",
+           "description": "Nettoyage et évacuations des déchets verts pour laisser votre jardin impeccable."
+         },
+         "priceSpecification": {
+           "@type": "PriceSpecification",
+           "price": "100",
+           "priceCurrency": "EUR"
+         }
+       },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Désherbage manuel ou sélectif",
+            "description": "Désherbage sans produits chimiques agressifs."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "50",
+            "priceCurrency": "EUR"
+          }
+        }
+      ]
+    },
+    "url": "https://justinebrnb.github.io/entretien.html",  // URL de la page du service
+    "image": "https://justinebrnb.github.io/images/Entretien/entretien0.webp",  // Image illustrant le service
+    "offers": {  // Offre globale pour ce service
+      "@type": "Offer",
+      "priceCurrency": "EUR",  // Devise utilisée
+      "price": "À partir de 200",  // Prix de départ pour ce service
+      "availability": "https://schema.org/InStock",  // Indique que le service est disponible
+      "validFrom": "2025-03-01"  // Date à partir de laquelle l'offre est valide
+    },
+    "review": [  // Liste des avis clients sur ce service
+      {
+        "@type": "Review",
+        "author": {  // Auteur de l'avis
+          "@type": "Person",
+          "name": "Caroline Blanchard"
+        },
+        "reviewRating": {  // Note donnée par l'auteur
+          "@type": "Rating",
+          "ratingValue": "5",  // Note sur 5
+          "bestRating": "5"
+        },
+        "reviewBody": "Excellente équipe pour l'entretien des haies et des plantes, je suis ravie du résultat !"
+      },
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Marc Lefebvre"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.5",
+          "bestRating": "5"
+        },
+        "reviewBody": "Super boulot ! Ils entretiennent mon jardin à la perfection et respectent mes demandes."
+      }
+    ],
+    "aggregateRating": {  // Note globale du service
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",  // Moyenne des notes
+      "reviewCount": "35"  // Nombre total d'avis
+    },
+    "sameAs": [  // Liens vers les profils sociaux et plateformes d'avis
+     "https://www.facebook.com/profile.php?id=100089258752223",
+      "https://www.instagram.com/lucasjardins06/"
+    ]
+   }
+   </script>
+ 
+   <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "contentUrl": "https://justinebrnb.github.io/images/Entretien/entretien0.webp",
+        "caption": "Image de couverture d'entretien d'arbustes"
+      },
+
+         {
+           "@context": "https://schema.org",
+           "@type": "ImageObject",
+           "contentUrl": "https://justinebrnb.github.io/images/Entretien/entretien2.webp",
+           "caption": "Ramassage de feuilles et nettoyage"
+         },
+
+   
   
+         {
+           "@context": "https://schema.org",
+           "@type": "ImageObject",
+           "contentUrl": "https://justinebrnb.github.io/images/Entretien/entretien3.webp",
+           "caption": "Tonte de pelouse"
+         },
+
+         {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "contentUrl": "https://justinebrnb.github.io/images/Entretien/entretien4.webp",
+            "caption": "Brouette remplie de feuilles"
+          }
+      </script>   
+
+  <script type="application/ld+json">
+ {
+    "@context": "https:/schema.org",
+    "type": "BreadcrumbList",
+    "itemListElement": [
+        {
+         "@type": "ListItem",
+                "position": 1,
+                "name": "Index",
+                "item": "https://justinebrnb.github.io"
+        },
+        {
+        "@type": "ListItem",
+                "position": 2,
+                "name": "FAQ",
+                "item": "https://justinebrnb.github.io/faq.html"
+  
+         },
+                              
+         {
+         "@type": "ListItem",
+                 "position": 3,
+                 "name": "Entretien",
+                 "item": "https://justinebrnb.github.io/entretien.html"
+                                                          
+         },
+  {
+        "@type": "ListItem",
+                "position": 4,
+                "name": "À propos",
+                "item": "https://justinebrnb.github.io/propos.html"
+  
+         },
+ 
+         {
+         "@type": "ListItem",
+                 "position": 5,
+                 "name": "Contact",
+                 "item": "https://justinebrnb.github.io/contact.html"
+          
+         }
+ 
+ 
+ 
+ 
+         ],
+ }
+ </script> 
+ 
  </head>
  <body>
     <header>
