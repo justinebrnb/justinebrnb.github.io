@@ -1,68 +1,282 @@
 <!DOCTYPE html>
 <html lang="fr">
- <head>
- <meta charset="utf-8" />
- <title>Lucas Jardins</title>
- <link rel="stylesheet" href="style.css" type="text/css" />
- <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
- <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
- </head>
- <body>
-    <header>
-        <nav>
-        <h1 class="titre">Lucas Jardins</h1>
-        <label for="toggle">☰</label>
-        <input type="checkbox" id="toggle">
-          <ul class=menu>
-            <li><a href="contact.html">CONTACT</a>
-            <li><a href="propos.html">A PROPOS</a>
-            <li><a href="index.html #lignes">NOS SERVICES</a>
-            <li><a href="faq.html">FAQ</a>
-            <li><a href="index.html">ACCUEIL</a>
-            </ul>
-        </nav>
-       </header>
-       <div class="image">
-        <img src="images/recup eau de pluie/recupeau0.webp" alt="Herbes">
-        <i class="fa-solid fa-arrow-down"></i>
-    </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Lucas Jardins - Récupérateur d'eau de pluie</title>
+  <link rel="stylesheet" href="style9.css" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
+
+  <!-- JSON-LD pour SEO (Service : Récupérateur d’eau) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Installation de récupérateurs d'eau de pluie",
+    "description": "Service de vente et d'installation de récupérateurs d’eau de pluie à Nice et ses environs. Bénéficiez d’un système écologique, économique et esthétique adapté à vos besoins.",
+    "provider": {
+      "@type": "Gardener",
+      "name": "Lucas Jardins",
+      "url": "https://justinebrnb.github.io",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://justinebrnb.github.io/images/logo/Logo.webp",
+        "width": 200,
+        "height": 200
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "102 Chemin du Génie",
+        "addressLocality": "Nice",
+        "postalCode": "06000",
+        "addressRegion": "Provence-Alpes-Côte d'Azur",
+        "addressCountry": "FR"
+      },
+      "telephone": "+33-7-88-76-05-71",
+      "email": "contact@lucasjardins.fr"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Nice et ses environs (rayon de 30 km)"
+    },
+    "serviceType": [
+      "Installation récupérateur d’eau",
+      "Récupérateur design bois",
+      "Modèle 200L éco",
+      "Modèle 500L familial"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Modèles de récupérateurs d’eau",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Modèle Éco 200L",
+            "description": "Compact et pratique, parfait pour petits jardins ou balcons.",
+            "image": "https://justinebrnb.github.io/images/recup%20eau%20de%20pluie/modele1.webp"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "39.90",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Modèle Familial 500L",
+            "description": "Idéal pour les foyers avec grands espaces verts.",
+            "image": "https://justinebrnb.github.io/images/recup%20eau%20de%20pluie/modele2.webp"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "69.90",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Modèle Design Bois",
+            "description": "Esthétique bois naturel pour s’intégrer dans tous les jardins.",
+            "image": "https://justinebrnb.github.io/images/recup%20eau%20de%20pluie/modele3.webp"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "99.90",
+            "priceCurrency": "EUR"
+          }
+        }
+      ]
+    },
+    "url": "https://justinebrnb.github.io/recuperateur.html",
+    "image": "https://justinebrnb.github.io/images/recup%20eau%20de%20pluie/recupeau0.webp",
+    "offers": {
+      "@type": "AggregateOffer",
+      "lowPrice": "39.90",
+      "highPrice": "99.90",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Camille D."
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "reviewBody": "Excellent service, mon récupérateur bois est magnifique et très pratique !"
+      },
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Loïc B."
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.5",
+          "bestRating": "5"
+        },
+        "reviewBody": "Installation rapide et bon rapport qualité/prix, je recommande !"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "25"
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100089258752223",
+      "https://www.instagram.com/lucasjardins06/"
+    ]
+  }
+  </script>
+</head>
 
 
-    <footer>
-      <div id="RS">
-      <h3 class = "footer1"> Nos Réseaux Sociaux</h3>
-      <h4 class = "footer2"> Pour ne jamais rien manquer</h4>
-      <p><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img  src="images/logo1.png" alt="Facebook" width="70" height="70"></a>
-     
-      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img  src="images/logo3.png" alt="Instagram" width="70" height="70"></a></p>
+<body>
+  
+
+  
+  <meta charset="utf-8" />
+  <title>Lucas Jardins - Récupérateur d'eau de pluie</title>
+  <link rel="stylesheet" href="style9.css" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
+
+  
+
+  <style>
+ 
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <h1 class="titre">Lucas Jardins</h1>
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle">
+      <ul class="menu">
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="propos.html">A PROPOS</a></li>
+        <li><a href="#info">NOS SERVICES</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="index.html">ACCUEIL</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="image">
+    <img src="images/recup eau de pluie/recupeau0.webp" alt="Image jardin verdoyant">
+    
+  </div>
+
+  <main>
+    <section class="section-page" id="info">
+      <div class="col">
+        <h2>Qu’est-ce qu’un récupérateur d’eau de pluie ?</h2>
+        <p>
+          Un récupérateur d’eau de pluie est un dispositif permettant de collecter, stocker et réutiliser l’eau de pluie tombée sur un toit ou une surface imperméable.
+          Cette eau peut ensuite être utilisée pour arroser le jardin, nettoyer les sols extérieurs ou alimenter les toilettes, réduisant ainsi la consommation d’eau potable.
+        </p>
       </div>
-      <div class="contact">
-      <h3 class = "footer1"> Vous voulez nous contacter ?</h3>
-      <h4 class = "footer2"> Lucas Jardins<BR>
-       102 Chemin du Génie,<BR> 06000 Nice<BR>Tel : 07.88.76.05.71<BR>
-      Fax : 01.63.45.78.52<BR>Email : contact@lucasjardins.com</h4>
-      </div>
-         <div class="newsletter">
-      <h3 class = "footer1"> Restez au courant de nos actualités</h3>
-      <h4 class = "footer2"> Rejoignez notre newsletter</h4>
-      <form>
-         <label for="email"></label>
-         <input type="email" id="email" name="email" placeholder="Votre adresse mail">
-         <input type="submit" id="submit" value="Envoyer">
-       </form>
-   </div>
-   <BR>
-   </footer>
-   <footer>
-      <div class="image566">
-      <img class="logo44" src="images/logo.webp" alt="Logo de la galerie d'art" width="200" height="200">
-      </div>
-      <p id="trucc"> L’engagement du travail bien fait, la disponibilité, le conseil et l’accompagnement de nos clients, font de nous plus qu’un simple prestataire, mais véritablement « votre partenaire espaces verts » !</p>
-   </footer>
-   <footer>
-      <p class="truccc"> ©2025 Lucas Jardin. Tous droits réservés - Conception : Studio Gresel</p>
-   </footer>
 
+      <div class="col">
+        <h2>Pourquoi en installer un ?</h2>
+        <ul>
+          <li><strong>Écologique</strong> : Moins de prélèvements dans les nappes phréatiques</li>
+          <li><strong>Économique</strong> : Réduction des factures d’eau</li>
+          <li><strong>Autonome</strong> : Utilisation en cas de sécheresse ou de restriction</li>
+          <li><strong>Pratique</strong> : Arrosage naturel et doux pour les plantes</li>
+        </ul>
+      </div>
 
- </body>
- </html>
+      <div style="width: 100%; text-align: center; margin-top: 40px;">
+        <a href="#nos-modeles" class="btn-jardin">Découvrir nos modèles</a>
+      </div>
+    </section>
+
+    <!-- 🔽 SECTION MODÈLES -->
+    <section class="modele-section" id="nos-modeles">
+      <h2>Nos modèles de récupérateurs</h2>
+      <div class="grille-modeles">
+        <div class="carte-modele">
+          <img src="images/recup eau de pluie/modele1.webp" alt="Modèle 1">
+          <h3>Modèle Éco 200L</h3>
+          <p>Compact et pratique, parfait pour petits jardins ou balcons.</p>
+          <button class="btn-panier">Ajouter au panier</button>
+        </div>
+        <div class="carte-modele">
+          <img src="images/recup eau de pluie/modele2.webp" alt="Modèle 2">
+          <h3>Modèle Familial 500L</h3>
+          <p>Idéal pour les foyers avec grands espaces verts.</p>
+          <button class="btn-panier">Ajouter au panier</button>
+        </div>
+        <div class="carte-modele">
+          <img src="images/recup eau de pluie/modele3.webp" alt="Modèle 3">
+          <h3>Modèle Design Bois</h3>
+          <p>Esthétique bois naturel pour s’intégrer dans tous les jardins.</p>
+          <button class="btn-panier">Ajouter au panier</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- FOOTER -->
+<footer>
+  <div id="RS">
+    <h3 class="footer1"> Nos Réseaux Sociaux</h3>
+    <h4 class="footer2"> Pour ne jamais rien manquer</h4>
+    <p>
+      <a href="https://www.facebook.com" target="_blank"><img src="images/RS/logo1.png" alt="Facebook" width="70" height="70"></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="images/RS/logo3.png" alt="Instagram" width="70" height="70"></a>
+    </p>
+  </div>
+
+  <div class="contact">
+    <h3 class="footer1"> Vous voulez nous contacter ?</h3>
+    <h4 class="footer2">
+      Lucas Jardins<br>
+      102 Chemin du Génie,<br>
+      06000 Nice<br>
+      Tel : 07.88.76.05.71<br>
+      Fax : 01.63.45.78.52<br>
+      Email : contact@lucasjardins.com
+    </h4>
+  </div>
+
+  <div class="newsletter">
+    <h3 class="footer1"> Restez au courant de nos actualités</h3>
+    <h4 class="footer2"> Rejoignez notre newsletter</h4>
+    <form>
+      <label for="email"></label>
+      <input type="email" id="email" name="email" placeholder="Votre adresse mail">
+      <input type="submit" id="submit" value="Envoyer">
+    </form>
+  </div>
+</footer>
+
+<footer>
+  <div class="image566">
+    <img class="logo44" src="images/Logo.webp" alt="Logo de Lucas Jardins" width="200" height="200">
+  </div>
+  <p id="trucc"> L’engagement du travail bien fait, la disponibilité, le conseil et l’accompagnement de nos clients font de nous plus qu’un simple prestataire : véritablement « votre partenaire espaces verts » !</p>
+</footer>
+
+<footer>
+  <p class="truccc">©2025 Lucas Jardins. Tous droits réservés - Conception : Studio Gresel</p>
+</footer>
+</body>
+</html>
