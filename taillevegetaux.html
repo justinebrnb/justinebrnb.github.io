@@ -3,9 +3,138 @@
  <head>
  <meta charset="utf-8" />
  <title>Lucas Jardins</title>
- <link rel="stylesheet" href="style.css" type="text/css" />
+ <link rel="stylesheet" href="styletdv.css" type="text/css" />
  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
  <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
+
+ <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",  // Définit le vocabulaire utilisé, ici Schema.org
+   "@type": "Service",  // Indique qu'il s'agit d'un service proposé
+   "name": "Taille des végétaux",  // Nom du service proposé
+   "description": "La taille des végétaux est essentielle pour maintenir la beauté et la santé de vos plantes. Experts interviennent pour assurer un entretien optimal et favoriser leur croissance.", 
+   // Description détaillée et optimisée pour le SEO
+   "provider": {  // Informations sur l'entreprise qui fournit ce service
+     "@type": "Gardener, landscaper",
+     "name": "Lucas jardins",  // Nom de l'entreprise
+     "url": "https://justinebrnb.github.io",  // URL officielle du site de l'entreprise
+     "logo": {  // Informations sur le logo de l'entreprise
+       "@type": "ImageObject",
+       "url": "https://justinebrnb.github.io/images/logo/Logo.webp",  // URL du logo
+       "width": 150,  // Largeur du logo en pixels
+       "height": 150  // Hauteur du logo en pixels
+     },
+     "address": {  // Adresse postale de l'entreprise
+       "@type": "PostalAddress",
+       "streetAddress": "102 Chemin du Génie",  // Rue et numéro
+       "addressLocality": "Nice",  // Ville
+       "postalCode": "06000",  // Code postal
+       "addressRegion": "Provence-Alpes-Côte d'Azur",  // Région administrative
+       "addressCountry": "FR"  // Pays
+     },
+     "telephone": "+33-7-88-76-05-71",  // Numéro de téléphone de l'entreprise
+     "email": "contact@lucasjardins.fr"  // Adresse e-mail de contact
+   },
+   "areaServed": {  // Zone desservie par le service
+     "@type": "Place",
+     "name": "Nice et ses environs (rayon de 30 km)"  // Zone d'intervention précisée
+   },
+   "serviceType": ["Taille des haies", "Entretien des arbustes", "Entretien saisonnier"], 
+   // Liste des différentes prestations incluses dans le service de taille de vegetaux
+   "hasOfferCatalog": {  // Catalogue des offres liées à ce service
+     "@type": "OfferCatalog",
+     "name": "Nos services de recherche de fuite",
+     "itemListElement": [  // Liste des offres spécifiques liées au service
+       {
+         "@type": "Offer",
+         "itemOffered": {
+           "@type": "Service",
+           "name": "Taille des haies",  // Type de service
+           "description": "Maintenir une haie dense et bien formée pour un rendu esthétique optimal."
+         },
+         "priceSpecification": {
+           "@type": "PriceSpecification",
+           "price": "100",  // Prix en euros
+           "priceCurrency": "EUR"  // Devise utilisée
+         }
+       },
+       {
+         "@type": "Offer",
+         "itemOffered": {
+           "@type": "Service",
+           "name": "Entretien des arbustes",
+           "description": "permet de conserver leur forme, stimuler leur floraison et garantir leur bonne santé."
+         },
+         "priceSpecification": {
+           "@type": "PriceSpecification",
+           "price": "180",
+           "priceCurrency": "EUR"
+         }
+       },
+       {
+         "@type": "Offer",
+         "itemOffered": {
+           "@type": "Service",
+           "name": "Entretien saisonnier",
+           "description": "Un entretien adapté à chaque saison pour garder vos espaces verts sains et florissants"
+         },
+         "priceSpecification": {
+           "@type": "PriceSpecification",
+           "price": "180",
+           "priceCurrency": "EUR"
+         }
+       }
+     ]
+   },
+   "url": "https://justinebrnb.github.io/taillevegetaux.html",  // URL de la page du service
+   "image": "images/taille vegetaux/taillevegetaux0.jpeg",  // Image illustrant le service
+   "offers": {  // Offre globale pour ce service
+     "@type": "Offer",
+     "priceCurrency": "EUR",  // Devise utilisée
+     "price": "À partir de 150",  // Prix de départ pour ce service
+     "availability": "https://schema.org/InStock",  // Indique que le service est disponible
+     "validFrom": "2025-03-01"  // Date à partir de laquelle l'offre est valide
+   },
+   "review": [  // Liste des avis clients sur ce service
+     {
+       "@type": "Review",
+       "author": {  // Auteur de l'avis
+         "@type": "Person",
+         "name": "Karim Driss"
+       },
+       "reviewRating": {  // Note donnée par l'auteur
+         "@type": "Rating",
+         "ratingValue": "5",  // Note sur 5
+         "bestRating": "5"
+       },
+       "reviewBody": "La haie est parfaitement taillée, tout est net et harmonieux. Merci pour ce beau travail !"  // Commentaire du client
+     },
+     {
+       "@type": "Review",
+       "author": {
+         "@type": "Person",
+         "name": "Lucie Bel"
+       },
+       "reviewRating": {
+         "@type": "Rating",
+         "ratingValue": "4.5",
+         "bestRating": "5"
+       },
+       "reviewBody": "Un vrai sens du détail. Mes buissons sont maintenant parfaitement équilibrés et le jardin a retrouvé toute sa beauté."
+     }
+   ],
+   "aggregateRating": {  // Note globale du service
+     "@type": "AggregateRating",
+     "ratingValue": "4.8",  // Moyenne des notes
+     "reviewCount": "95"  // Nombre total d'avis
+   },
+   "sameAs": [  // Liens vers les profils sociaux et plateformes d'avis
+    "https://www.facebook.com/profile.php?id=100089258752223",
+     "https://www.instagram.com/lucasjardins06/"
+   ]
+  }
+  </script>
+
  </head>
  <body>
     <header>
@@ -23,18 +152,53 @@
         </nav>
        </header>
        <div class="image">
-        <img src="images/taille vegetaux/taillevegetaux0.webp" alt="Herbes">
+        <img src="images/taille vegetaux/taillevegetaux0.jpeg" alt="Herbes">
         <i class="fa-solid fa-arrow-down"></i>
     </div>
-
+    <br><br>
+    <section id="nos-services" class="service">
+        <div class="contenu">
+            <h2>Service de Taille des Végétaux</h2>
+            <p>La taille des végétaux est essentielle pour maintenir la beauté et la santé de vos plantes. Nos experts interviennent pour assurer un entretien optimal et favoriser leur croissance.</p>
+            
+            <h3>Pourquoi tailler vos végétaux ?</h3>
+            <ul>
+                <li><strong>Stimuler la croissance :</strong> Une taille régulière favorise le développement harmonieux des plantes.</li>
+                <li><strong>Améliorer l’esthétique :</strong> Un jardin bien entretenu est plus agréable à voir.</li>
+                <li><strong>Éliminer les parties malades :</strong> Cela prévient la propagation des maladies et des parasites.</li>
+                <li><strong>Assurer la sécurité :</strong> Réduire les branches envahissantes ou dangereuses.</li>
+            </ul>
+            <img src="images/taille vegetaux/taillevege2.jpg" alt="taille de vegetaux" class="image-gauche">
+            <img src="images/taille vegetaux/taillevege5.jpg" alt="taille de vegetaux" class="image-milieu">
+            <h3>Nos prestations</h3>
+            <h4>➡ Taille des haies</h4>
+            <p>Maintenir une haie dense et bien formée pour un rendu esthétique optimal.</p>
+            
+            <h4>➡ Taille des arbustes</h4>
+            <p>Favoriser la floraison et structurer la croissance des arbustes.</p>
+            
+            <h4>➡ Taille des rosiers</h4>
+            <p>Encourager une floraison abondante et prolongée.</p>
+            
+            <h4>➡ Entretien saisonnier</h4>
+            <p>Des interventions adaptées aux besoins de chaque plante selon la saison.</p>
+            
+            <h3>Pourquoi choisir Lucas Jardins ?</h3>
+            <ul>
+                <li>Professionnels qualifiés et expérimentés</li>
+                <li>Intervention rapide et soignée</li>
+                <li>Respect des besoins spécifiques de chaque plante</li>
+                <li>Devis gratuit et personnalisé</li>
+            </ul>
+        </div>
+    </section>
 
     <footer>
       <div id="RS">
       <h3 class = "footer1"> Nos Réseaux Sociaux</h3>
       <h4 class = "footer2"> Pour ne jamais rien manquer</h4>
-      <p><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img  src="images/logo1.png" alt="Facebook" width="70" height="70"></a>
-     
-      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img  src="images/logo3.png" alt="Instagram" width="70" height="70"></a></p>
+      <p><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img  src="images/RS/logo1.png" alt="Facebook" width="70" height="70"></a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img  src="images/RS/logo3.png" alt="Instagram" width="70" height="70"></a></p>
       </div>
       <div class="contact">
       <h3 class = "footer1"> Vous voulez nous contacter ?</h3>
@@ -55,13 +219,13 @@
    </footer>
    <footer>
       <div class="image566">
-      <img class="logo44" src="images/logo.webp" alt="Logo de la galerie d'art" width="200" height="200">
+      <img class="logo44" src="images/logo/Logo.png" alt="Logo de la galerie d'art" width="150" height="150">
       </div>
       <p id="trucc"> L’engagement du travail bien fait, la disponibilité, le conseil et l’accompagnement de nos clients, font de nous plus qu’un simple prestataire, mais véritablement « votre partenaire espaces verts » !</p>
    </footer>
    <footer>
       <p class="truccc"> ©2025 Lucas Jardin. Tous droits réservés - Conception : Studio Gresel</p>
-   </footer>    
+   </footer>
 
 
  </body>
