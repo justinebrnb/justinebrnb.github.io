@@ -1,67 +1,235 @@
 <!DOCTYPE html>
 <html lang="fr">
- <head>
- <meta charset="utf-8" />
- <title>Lucas Jardins</title>
- <link rel="stylesheet" href="style.css" type="text/css" />
- <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
- <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
- </head>
- <body>
-    <header>
-        <nav>
-        <h1 class="titre">Lucas Jardins</h1>
-        <label for="toggle">☰</label>
-        <input type="checkbox" id="toggle">
-          <ul class=menu>
-            <li><a href="contact.html">CONTACT</a>
-            <li><a href="propos.html">A PROPOS</a>
-            <li><a href="index.html #lignes">NOS SERVICES</a>
-            <li><a href="faq.html">FAQ</a>
-            <li><a href="index.html">ACCUEIL</a>
-            </ul>
-        </nav>
-       </header>
-       <div class="image">
-        <img src="images/coaching particulier/coach0.webp" alt="Coaching particulier">
-        <i class="fa-solid fa-arrow-down"></i>
+<head>
+  <meta charset="utf-8" />
+  <title>Lucas Jardins - Coaching particulier</title>
+  <link rel="stylesheet" href="stylec.css" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
+
+  <!-- Intégration du JSON-LD pour le service Coaching particulier -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Coaching jardin personnalisé",
+    "description": "Service d'accompagnement individuel pour les particuliers souhaitant aménager ou entretenir leur jardin avec l'aide d'un expert.",
+    "provider": {
+      "@type": "Gardener",
+      "name": "Lucas Jardins",
+      "url": "https://justinebrnb.github.io",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://justinebrnb.github.io/images/logo/Logo.webp",
+        "width": 200,
+        "height": 200
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "102 Chemin du Génie",
+        "addressLocality": "Nice",
+        "postalCode": "06000",
+        "addressRegion": "Provence-Alpes-Côte d'Azur",
+        "addressCountry": "FR"
+      },
+      "telephone": "+33-7-88-76-05-71",
+      "email": "contact@lucasjardins.fr"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Nice et ses environs (rayon de 30 km)"
+    },
+    "serviceType": ["Coaching jardin particulier", "Accompagnement personnalisé", "Conseils jardinage"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Offres de coaching jardin",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Séance découverte",
+            "description": "30 minutes de conseils de base pour débuter votre projet."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "49",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Coaching approfondi",
+            "description": "1 heure d'accompagnement personnalisé sur site ou en visio."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "89",
+            "priceCurrency": "EUR"
+          }
+        }
+      ]
+    },
+    "url": "https://justinebrnb.github.io/coaching.html",
+    "image": "https://justinebrnb.github.io/images/coaching%20particulier/coach0.webp",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "À partir de 49",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2025-04-01"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Emma R."
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "reviewBody": "J’ai adoré la séance de coaching, très utile et adaptée à mon jardin."
+      },
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Marc D."
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.8",
+          "bestRating": "5"
+        },
+        "reviewBody": "Conseils très pro, je recommande fortement."
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "42"
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100089258752223",
+      "https://www.instagram.com/lucasjardins06/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Lucas Jardins - Coaching particulier</title>
+  <link rel="stylesheet" href="stylec.css" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="titre">Lucas Jardins</h1>
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle">
+      <ul class="menu">
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="propos.html">A PROPOS</a></li>
+        <li><a href="index.html #lignes">NOS SERVICES</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="index.html">ACCUEIL</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="image">
+    <img src="images/coaching particulier/coach0.JPG" alt="Herbes">
+   
+    
+  </div>
+
+  <!-- SECTION COACHING PARTICULIER -->
+  
+  
+  <section class="service">
+<h2 class="titre-coaching">Accompagnement personnalisé pour vos projets de jardin</h2>
+    <p>
+      Chez Lucas Jardins, nous pensons que chaque jardinier amateur mérite les bons conseils pour faire de son extérieur un vrai havre de paix.
+      C’est pourquoi nous proposons un <strong>service de coaching individuel</strong>, adapté à vos besoins, vos envies… et votre jardin.
+    </p>
+
+    <h3>Pourquoi faire appel à un coach jardinier ?</h3>
+    <ul>
+      <li>Vous débutez en jardinage et ne savez pas par où commencer ?</li>
+      <li>Vous avez un projet précis mais vous manquez d'expertise ?</li>
+      <li>Vous voulez apprendre à faire par vous-même, avec les bons gestes ?</li>
+    </ul>
+
+    <p>Nous vous accompagnons à domicile ou à distance, en vous guidant étape par étape selon la saison, votre sol, vos plantes et vos objectifs.</p>
+
+    <h3>Ce que comprend le coaching :</h3>
+    <ul>
+      <li>Visite ou rendez-vous vidéo personnalisé (30 à 60 minutes)</li>
+      <li>Évaluation de votre espace, de votre terre et de vos contraintes</li>
+      <li>Proposition d’un plan d’action sur mesure</li>
+      <li>Fiche récapitulative avec les conseils clés</li>
+    </ul>
+
+    <h4>Tarif : à partir de 49€</h4>
+    <p>Réservez dès maintenant votre séance de coaching jardin !</p>
+
+    <div class="button33">
+      <a href="contact.html" class="button3">Prendre<br>rendez-vous</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div id="RS">
+      <h3 class="footer1"> Nos Réseaux Sociaux</h3>
+      <h4 class="footer2"> Pour ne jamais rien manquer</h4>
+      <p>
+        <a href="https://www.facebook.com" target="_blank"><img src="images/RS/logo1.png" alt="Facebook" width="70" height="70"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="images/RS/logo3.png" alt="Instagram" width="70" height="70"></a>
+      </p>
     </div>
 
+    <div class="contact">
+      <h3 class="footer1"> Vous voulez nous contacter ?</h3>
+      <h4 class="footer2">
+        Lucas Jardins<br>
+        102 Chemin du Génie,<br>
+        06000 Nice<br>
+        Tel : 07.88.76.05.71<br>
+        Fax : 01.63.45.78.52<br>
+        Email : contact@lucasjardins.com
+      </h4>
+    </div>
 
-    <footer>
-      <div id="RS">
-      <h3 class = "footer1"> Nos Réseaux Sociaux</h3>
-      <h4 class = "footer2"> Pour ne jamais rien manquer</h4>
-      <p><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img  src="images/logo1.png" alt="Facebook" width="70" height="70"></a>
-      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img  src="images/logo3.png" alt="Instagram" width="70" height="70"></a></p>
-      </div>
-      <div class="contact">
-      <h3 class = "footer1"> Vous voulez nous contacter ?</h3>
-      <h4 class = "footer2"> Lucas Jardins<BR>
-       102 Chemin du Génie,<BR> 06000 Nice<BR>Tel : 07.88.76.05.71<BR>
-      Fax : 01.63.45.78.52<BR>Email : contact@lucasjardins.com</h4>
-      </div>
-         <div class="newsletter">
-      <h3 class = "footer1"> Restez au courant de nos actualités</h3>
-      <h4 class = "footer2"> Rejoignez notre newsletter</h4>
+    <div class="newsletter">
+      <h3 class="footer1"> Restez au courant de nos actualités</h3>
+      <h4 class="footer2"> Rejoignez notre newsletter</h4>
       <form>
-         <label for="email"></label>
-         <input type="email" id="email" name="email" placeholder="Votre adresse mail">
-         <input type="submit" id="submit" value="Envoyer">
-       </form>
-   </div>
-   <BR>
-   </footer>
-   <footer>
-      <div class="image566">
-      <img class="logo44" src="images/logo.wepb" alt="Logo de la galerie d'art" width="200" height="200">
-      </div>
-      <p id="trucc"> L’engagement du travail bien fait, la disponibilité, le conseil et l’accompagnement de nos clients, font de nous plus qu’un simple prestataire, mais véritablement « votre partenaire espaces verts » !</p>
-   </footer>
-   <footer>
-      <p class="truccc"> ©2025 Lucas Jardin. Tous droits réservés - Conception : Studio Gresel</p>
-   </footer>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Votre adresse mail">
+        <input type="submit" id="submit" value="Envoyer">
+      </form>
+    </div>
+  </footer>
 
+  <footer>
+    <div class="image566">
+      <img class="logo44" src="images/Logo.webp" alt="Logo de Lucas Jardins" width="200" height="200">
+    </div>
+    <p id="trucc"> L’engagement du travail bien fait, la disponibilité, le conseil et l’accompagnement de nos clients font de nous plus qu’un simple prestataire : véritablement « votre partenaire espaces verts » !</p>
+  </footer>
 
- </body>
- </html>
+  <footer>
+    <p class="truccc">©2025 Lucas Jardins. Tous droits réservés - Conception : Studio Gresel</p>
+  </footer>
+</body>
+</html>
