@@ -1314,17 +1314,6 @@ text-align: center;
 
 
 
-footer {
-   display: grid;
-   justify-content: center;
-   padding: 5px;
-   background-color: #000000;
-   color: #fff;
- }
-
-
-
-
 #RS{
    margin-left: 00px;
    padding-right: 0px;
@@ -1514,15 +1503,7 @@ footer {
    margin-bottom: 10px;
    font-size: 16px;
    
-}footer {
-    
-    display: grid;
-    justify-content: center;
-    padding: 5px;
-    background-color: #000000;
-    color: #fff;
-  }
- 
+
  
  
  
